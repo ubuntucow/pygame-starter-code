@@ -2,7 +2,7 @@ import pygame
 
 
 GAME_RES = 800, 600
-
+FPS = 60
 
 pygame.init()
 game_sc = pygame.display.set_mode(GAME_RES)
@@ -16,4 +16,4 @@ while True:
             exit()
 
     pygame.display.flip()
-    clock.tick()
+    clock.tick(60)
